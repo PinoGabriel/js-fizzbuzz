@@ -1,5 +1,5 @@
-let cards = document.getElementById("my_row");
-
+/* let cards = document.getElementById("my_row"); */
+let myCard = document.getElementById("my_card");
 
 
 
@@ -7,24 +7,28 @@ for (let x = 1; x <= 100; x++) {
 
     if (x % 3 == 0 && x % 5 == 0) {
         console.log("FizzBuzz")
-        const m35 = document.createElement("p")
+        const m35 = document.createElement("div")
         m35.innerHTML = `FizzBuzz`
-        cards.append(m35)
+        myCard.append(m35)
+        m35.classList.add("myclass", "red")
     } else if (x % 3 == 0) {
         console.log("Fizz")
-        const m3 = document.createElement("p")
+        const m3 = document.createElement("div")
         m3.innerHTML = `Fizz`
-        cards.append(m3)
+        myCard.append(m3)
+        m3.classList.add("myclass", "green")
     } else if (x % 5 == 0) {
         console.log("Buzz")
-        const m5 = document.createElement("p")
+        const m5 = document.createElement("div")
         m5.innerHTML = `Buzz`
-        cards.append(m5)
+        myCard.append(m5)
+        m5.classList.add("myclass", "yellow")
     } else {
         console.log(x)
-        const m = document.createElement("p")
+        const m = document.createElement("div")
         m.innerHTML = `${x}`
-        cards.append(m)
+        myCard.append(m);
+        m.classList.add("myclass", "blue")
     }
 
 }
