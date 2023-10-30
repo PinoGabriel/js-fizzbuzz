@@ -1,9 +1,6 @@
-/* let cards = document.getElementById("my_row"); */
 let myCard = document.getElementById("my_card");
 
-
-
-for (let x = 1; x <= 100; x++) {
+/* for (let x = 1; x <= 100; x++) {
 
     if (x % 3 == 0 && x % 5 == 0) {
         console.log("FizzBuzz")
@@ -31,6 +28,33 @@ for (let x = 1; x <= 100; x++) {
         m.classList.add("myclass", "blue")
     }
 
+} */
+
+for (let x = 1; x <= 100; x++) {
+    const element = document.createElement("div")
+    if (x % 3 == 0 && x % 5 == 0) {
+        console.log("FizzBuzz")
+        element.innerHTML = `FizzBuzz`
+        element.classList.add("red")
+    } else if (x % 3 == 0) {
+        console.log("Fizz")
+        element.innerHTML = `Fizz`
+        element.classList.add("green")
+    } else if (x % 5 == 0) {
+        console.log("Buzz")
+        element.innerHTML = `Buzz`
+        element.classList.add("yellow")
+    } else {
+        console.log(x)
+        element.innerHTML = `${x}`
+        element.classList.add("blue")
+    }
+
+    element.classList.add("myclass");
+    myCard.append(element)
 }
 
+
+
 console.log("completo");
+

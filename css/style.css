@@ -25,15 +25,14 @@ body {
 }
 
 #my_card {
-    margin: 5px;
     width: calc(100%);
     display: flex;
     flex-wrap: wrap;
 }
 
 .myclass {
-    width: calc(100% / 7 - 10px);
-    margin: 5px;
+    width: calc(100% / 7 - 20px);
+    margin: 10px;
     display: flex;
     justify-content: center;
     height: 80px;
